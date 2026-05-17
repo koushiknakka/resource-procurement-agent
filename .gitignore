@@ -1,0 +1,19 @@
+# Local environment and package manager files
+.venv/
+node_modules/
+
+# Python caching and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables and credentials (CRITICAL)
+.env
+
+# Data and large files
+datasets/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
