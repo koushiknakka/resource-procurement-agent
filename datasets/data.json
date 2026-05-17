@@ -1,0 +1,317 @@
+[
+  {
+    "order_id": 1,
+    "name_of_the_retailer": "Alpha Electricals & Co.",
+    "retailer_contact": "sales@alphaelectricals.in",
+    "date_of_order": "2026-01-15",
+    "date_of_delivery": "2026-01-18",
+    "product_ordered": "Ceiling Fan",
+    "item_specifications": "1200mm sweep, BLDC energy-saving motor, 5-star rating, inclusion of remote control",
+    "product_quality": 5,
+    "product_quantity": 40,
+    "minimum_order_quantity_moq": 10,
+    "product_cost": 140000,
+    "retailer_place": "Ranchi",
+    "target_delv_date_vs_actual_delv_date": {
+      "target_delivery_date": "2026-01-18",
+      "actual_delivery_date": "2026-01-18",
+      "days_delayed": 0,
+      "status": "On-Time"
+    },
+    "remarks": "Provided 3 extra remote control units as a replacement gift."
+  },
+  {
+    "order_id": 2,
+    "name_of_the_retailer": "Beta Power Solutions",
+    "retailer_contact": "support@betapower.com",
+    "date_of_order": "2026-01-22",
+    "date_of_delivery": "2026-02-02",
+    "product_ordered": "Digital Oscilloscope",
+    "item_specifications": "Dual-channel, 100 MHz bandwidth, 1 GS/s sampling rate, 7-inch WVGA color display",
+    "product_quality": 4,
+    "product_quantity": 15,
+    "minimum_order_quantity_moq": 2,
+    "product_cost": 375000,
+    "retailer_place": "Jamshedpur",
+    "target_delv_date_vs_actual_delv_date": {
+      "target_delivery_date": "2026-01-30",
+      "actual_delivery_date": "2026-02-02",
+      "days_delayed": 3,
+      "status": "Delayed"
+    },
+    "remarks": "None."
+  },
+  {
+    "order_id": 3,
+    "name_of_the_retailer": "Coastal Lights & Hardware",
+    "retailer_contact": "orders@coastallights.in",
+    "date_of_order": "2026-01-29",
+    "date_of_delivery": "2026-02-03",
+    "product_ordered": "LED Tube Light",
+    "item_specifications": "20W Cool Day Light, batten integrated, 2000 lumens, surge protection up to 4kV",
+    "product_quality": 5,
+    "product_quantity": 100,
+    "minimum_order_quantity_moq": 50,
+    "product_cost": 25000,
+    "retailer_place": "Kakinada",
+    "target_delv_date_vs_actual_delv_date": {
+      "target_delivery_date": "2026-02-05",
+      "actual_delivery_date": "2026-02-03",
+      "days_delayed": 0,
+      "status": "Early"
+    },
+    "remarks": "Included free pack of heavy-duty wall plugs and mounting screws."
+  },
+  {
+    "order_id": 4,
+    "name_of_the_retailer": "Apex Coolers & Appliances",
+    "retailer_contact": "corporate@apexcool.in",
+    "date_of_order": "2026-02-05",
+    "date_of_delivery": "2026-02-15",
+    "product_ordered": "Split AC",
+    "item_specifications": "1.5 Ton, 5-Star Inverter compressor, copper condenser coil, PM 2.5 filter protection",
+    "product_quality": 4,
+    "product_quantity": 8,
+    "minimum_order_quantity_moq": 2,
+    "product_cost": 360000,
+    "retailer_place": "Ranchi",
+    "target_delv_date_vs_actual_delv_date": {
+      "target_delivery_date": "2026-02-12",
+      "actual_delivery_date": "2026-02-15",
+      "days_delayed": 3,
+      "status": "Delayed"
+    },
+    "remarks": "None."
+  },
+  {
+    "order_id": 5,
+    "name_of_the_retailer": "Alpha Electricals & Co.",
+    "retailer_contact": "sales@alphaelectricals.in",
+    "date_of_order": "2026-02-12",
+    "date_of_delivery": "2026-02-16",
+    "product_ordered": "LED Tube Light",
+    "item_specifications": "20W Cool Day Light, batten integrated, 2000 lumens, surge protection up to 4kV",
+    "product_quality": 3,
+    "product_quantity": 60,
+    "minimum_order_quantity_moq": 50,
+    "product_cost": 162000,
+    "retailer_place": "Ranchi",
+    "target_delv_date_vs_actual_delv_date": {
+      "target_delivery_date": "2026-02-17",
+      "actual_delivery_date": "2026-02-16",
+      "days_delayed": 0,
+      "status": "Early"
+    },
+    "remarks": "Standard bulk packaging, no extra perks."
+  },
+  {
+    "order_id": 6,
+    "name_of_the_retailer": "Coastal Lights & Hardware",
+    "retailer_contact": "orders@coastallights.in",
+    "date_of_order": "2026-02-18",
+    "date_of_delivery": "2026-02-22",
+    "product_ordered": "Ceiling Fan",
+    "item_specifications": "1200mm sweep, BLDC energy-saving motor, 5-star rating, inclusion of remote control",
+    "product_quality": 5,
+    "product_quantity": 25,
+    "minimum_order_quantity_moq": 10,
+    "product_cost": 92500,
+    "retailer_place": "Kakinada",
+    "target_delv_date_vs_actual_delv_date": {
+      "target_delivery_date": "2026-02-23",
+      "actual_delivery_date": "2026-02-22",
+      "days_delayed": 0,
+      "status": "On-Time"
+    },
+    "remarks": "Offered a 5% discount coupon valid on future switchboard accessory orders."
+  },
+  {
+    "order_id": 7,
+    "name_of_the_retailer": "Beta Power Solutions",
+    "retailer_contact": "support@betapower.com",
+    "date_of_order": "2026-02-25",
+    "date_of_delivery": "2026-03-02",
+    "product_ordered": "Split AC",
+    "item_specifications": "1.5 Ton, 5-Star Inverter compressor, copper condenser coil, PM 2.5 filter protection",
+    "product_quality": 5,
+    "product_quantity": 10,
+    "minimum_order_quantity_moq": 2,
+    "product_cost": 440000,
+    "retailer_place": "Jamshedpur",
+    "target_delv_date_vs_actual_delv_date": {
+      "target_delivery_date": "2026-03-02",
+      "actual_delivery_date": "2026-03-02",
+      "days_delayed": 0,
+      "status": "On-Time"
+    },
+    "remarks": "Provided baseline standard delivery with extra industrial-grade mounting brackets."
+  },
+  {
+    "order_id": 8,
+    "name_of_the_retailer": "Apex Coolers & Appliances",
+    "retailer_contact": "corporate@apexcool.in",
+    "date_of_order": "2026-03-03",
+    "date_of_delivery": "2026-03-07",
+    "product_ordered": "Ceiling Fan",
+    "item_specifications": "1200mm sweep, BLDC energy-saving motor, 5-star rating, inclusion of remote control",
+    "product_quality": 4,
+    "product_quantity": 15,
+    "minimum_order_quantity_moq": 10,
+    "product_cost": 540000,
+    "retailer_place": "Ranchi",
+    "target_delv_date_vs_actual_delv_date": {
+      "target_delivery_date": "2026-03-08",
+      "actual_delivery_date": "2026-03-07",
+      "days_delayed": 0,
+      "status": "Early"
+    },
+    "remarks": "None."
+  },
+  {
+    "order_id": 9,
+    "name_of_the_retailer": "Lab-Tech Instruments India",
+    "retailer_contact": "orders@labtechinstruments.in",
+    "date_of_order": "2026-03-10",
+    "date_of_delivery": "2026-03-15",
+    "product_ordered": "Digital Oscilloscope",
+    "item_specifications": "Dual-channel, 100 MHz bandwidth, 1 GS/s sampling rate, 7-inch WVGA color display",
+    "product_quality": 5,
+    "product_quantity": 5,
+    "minimum_order_quantity_moq": 1,
+    "product_cost": 130000,
+    "retailer_place": "Kakinada",
+    "target_delv_date_vs_actual_delv_date": {
+      "target_delivery_date": "2026-03-16",
+      "actual_delivery_date": "2026-03-15",
+      "days_delayed": 0,
+      "status": "Early"
+    },
+    "remarks": "Gave complimentary 2-year extended warranty certificate for educational institutions."
+  },
+  {
+    "order_id": 10,
+    "name_of_the_retailer": "Alpha Electricals & Co.",
+    "retailer_contact": "sales@alphaelectricals.in",
+    "date_of_order": "2026-03-18",
+    "date_of_delivery": "2026-03-26",
+    "product_ordered": "Split AC",
+    "item_specifications": "1.5 Ton, 5-Star Inverter compressor, copper condenser coil, PM 2.5 filter protection",
+    "product_quality": 4,
+    "product_quantity": 4,
+    "minimum_order_quantity_moq": 2,
+    "product_cost": 176000,
+    "retailer_place": "Ranchi",
+    "target_delv_date_vs_actual_delv_date": {
+      "target_delivery_date": "2026-03-24",
+      "actual_delivery_date": "2026-03-26",
+      "days_delayed": 2,
+      "status": "Delayed"
+    },
+    "remarks": "None."
+  },
+  {
+    "order_id": 11,
+    "name_of_the_retailer": "Coastal Lights & Hardware",
+    "retailer_contact": "orders@coastallights.in",
+    "date_of_order": "2026-03-25",
+    "date_of_delivery": "2026-03-29",
+    "product_ordered": "LED Tube Light",
+    "item_specifications": "20W Cool Day Light, batten integrated, 2000 lumens, surge protection up to 4kV",
+    "product_quality": 5,
+    "product_quantity": 200,
+    "minimum_order_quantity_moq": 50,
+    "product_cost": 46000,
+    "retailer_place": "Kakinada",
+    "target_delv_date_vs_actual_delv_date": {
+      "target_delivery_date": "2026-03-29",
+      "actual_delivery_date": "2026-03-29",
+      "days_delayed": 0,
+      "status": "On-Time"
+    },
+    "remarks": "Delivered in reinforced protective crates to ensure zero breakage."
+  },
+  {
+    "order_id": 12,
+    "name_of_the_retailer": "Beta Power Solutions",
+    "retailer_contact": "support@betapower.com",
+    "date_of_order": "2026-04-02",
+    "date_of_delivery": "2026-04-12",
+    "product_ordered": "Ceiling Fan",
+    "item_specifications": "1200mm sweep, BLDC energy-saving motor, 5-star rating, inclusion of remote control",
+    "product_quality": 3,
+    "product_quantity": 30,
+    "minimum_order_quantity_moq": 10,
+    "product_cost": 111000,
+    "retailer_place": "Jamshedpur",
+    "target_delv_date_vs_actual_delv_date": {
+      "target_delivery_date": "2026-04-09",
+      "actual_delivery_date": "2026-04-12",
+      "days_delayed": 3,
+      "status": "Delayed"
+    },
+    "remarks": "None."
+  },
+  {
+    "order_id": 13,
+    "name_of_the_retailer": "Lab-Tech Instruments India",
+    "retailer_contact": "orders@labtechinstruments.in",
+    "date_of_order": "2026-04-10",
+    "date_of_delivery": "2026-04-15",
+    "product_ordered": "Digital Oscilloscope",
+    "item_specifications": "Dual-channel, 100 MHz bandwidth, 1 GS/s sampling rate, 7-inch WVGA color display",
+    "product_quality": 5,
+    "product_quantity": 8,
+    "minimum_order_quantity_moq": 1,
+    "product_cost": 204000,
+    "retailer_place": "Kakinada",
+    "target_delv_date_vs_actual_delv_date": {
+      "target_delivery_date": "2026-04-16",
+      "actual_delivery_date": "2026-04-15",
+      "days_delayed": 0,
+      "status": "Early"
+    },
+    "remarks": "Included free calibration accessories and extra logic analyzer probes."
+  },
+  {
+    "order_id": 14,
+    "name_of_the_retailer": "Apex Coolers & Appliances",
+    "retailer_contact": "corporate@apexcool.in",
+    "date_of_order": "2026-04-18",
+    "date_of_delivery": "2026-04-22",
+    "product_ordered": "LED Tube Light",
+    "item_specifications": "20W Cool Day Light, batten integrated, 2000 lumens, surge protection up to 4kV",
+    "product_quality": 4,
+    "product_quantity": 50,
+    "minimum_order_quantity_moq": 50,
+    "product_cost": 14500,
+    "retailer_place": "Ranchi",
+    "target_delv_date_vs_actual_delv_date": {
+      "target_delivery_date": "2026-04-22",
+      "actual_delivery_date": "2026-04-22",
+      "days_delayed": 0,
+      "status": "On-Time"
+    },
+    "remarks": "None."
+  },
+  {
+    "order_id": 15,
+    "name_of_the_retailer": "Lab-Tech Instruments India",
+    "retailer_contact": "orders@labtechinstruments.in",
+    "date_of_order": "2026-04-26",
+    "date_of_delivery": "2026-05-02",
+    "product_ordered": "Digital Oscilloscope",
+    "item_specifications": "Dual-channel, 100 MHz bandwidth, 1 GS/s sampling rate, 7-inch WVGA color display",
+    "product_quality": 4,
+    "product_quantity": 3,
+    "minimum_order_quantity_moq": 1,
+    "product_cost": 78000,
+    "retailer_place": "Kakinada",
+    "target_delv_date_vs_actual_delv_date": {
+      "target_delivery_date": "2026-05-02",
+      "actual_delivery_date": "2026-05-02",
+      "days_delayed": 0,
+      "status": "On-Time"
+    },
+    "remarks": "Provided copies of laboratory experiment manuals for students."
+  }
+]

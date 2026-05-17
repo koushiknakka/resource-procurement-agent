@@ -1,0 +1,8 @@
+langchain
+langgraph
+langsmith
+ipykernel
+langchain_google_genai
+dotenv
+fastapi
+uvicorn
