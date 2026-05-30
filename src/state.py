@@ -7,3 +7,6 @@ class AgentState(TypedDict):
   eligible_records: List[dict]
   ranked_results: List[dict]
   final_output: str
+  weight_price: float
+  weight_delivery: float
+  weight_quality: float

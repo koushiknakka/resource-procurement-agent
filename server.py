@@ -2,7 +2,7 @@
 import os
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 # Import the compiled LangGraph app from your main.py file
 from main import app
@@ -26,6 +26,9 @@ api_server.add_middleware(
 # 3. Define the Incoming Request Body Structure
 class QueryRequest(BaseModel):
     user_query: str
+    weight_price: float = Field(default=0.33, description="Weight factor for price priority (0.0 to 1.0)")
+    weight_delivery: float = Field(default=0.33, description="Weight factor for speed priority (0.0 to 1.0)")
+    weight_quality: float = Field(default=0.34, description="Weight factor for vendor score priority (0.0 to 1.0)")
 
 # 4. Create the API Endpoint
 @api_server.post("/api/procure/rank")
@@ -39,7 +42,17 @@ async def process_procurement_query(payload: QueryRequest):
         
     try:
         # Packages the parameter into our known graph state dictionary
-        inputs = {"user_query": payload.user_query}
+        inputs = {
+            "user_query": payload.user_query,
+            "weight_price": payload.weight_price,
+            "weight_delivery": payload.weight_delivery,
+            "weight_quality": payload.weight_quality,
+            "target_product": "Unknown",
+            "approx_quantity": None,
+            "eligible_records": [],
+            "ranked_results": [],
+            "final_output": ""
+        }
         
         # Invoke the compiled graph synchronously 
         graph_output = app.invoke(inputs)
