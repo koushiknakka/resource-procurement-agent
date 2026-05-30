@@ -27,6 +27,7 @@ function App() {
   const [leaderboard, setLeaderboard] = useState<Retailer[] | null>(null);
   const [report, setReport] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [profile, setProfile] = useState<string>('Balanced');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -38,12 +39,31 @@ function App() {
     setReport(null);
 
     try {
+      let weight_price = 0.34;
+      let weight_delivery = 0.33;
+      let weight_quality = 0.33;
+
+      if (profile === 'Lowest Cost Strategy') {
+        weight_price = 0.70;
+        weight_delivery = 0.15;
+        weight_quality = 0.15;
+      } else if (profile === 'Fastest Delivery Speed') {
+        weight_price = 0.15;
+        weight_delivery = 0.70;
+        weight_quality = 0.15;
+      }
+
       const response = await fetch('http://127.0.0.1:8000/api/procure/rank', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ user_query: query }),
+        body: JSON.stringify({ 
+          user_query: query,
+          weight_price,
+          weight_delivery,
+          weight_quality
+        }),
       });
 
       if (!response.ok) {
@@ -82,6 +102,23 @@ function App() {
             {loading ? <div className="loader" /> : <Search size={20} />}
           </button>
         </form>
+      </div>
+
+      <div className="config-row">
+        <span className="config-label">Optimization Profiles:</span>
+        <div className="profile-tabs">
+          {['Balanced', 'Lowest Cost Strategy', 'Fastest Delivery Speed'].map((p) => (
+            <button
+              key={p}
+              type="button"
+              className={`profile-tab ${profile === p ? 'active' : ''}`}
+              onClick={() => setProfile(p)}
+              disabled={loading}
+            >
+              {p}
+            </button>
+          ))}
+        </div>
       </div>
 
       <div className="split-layout">
