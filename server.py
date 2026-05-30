@@ -31,17 +31,15 @@ class QueryRequest(BaseModel):
     weight_quality: float = Field(default=0.34, description="Weight factor for vendor score priority (0.0 to 1.0)")
 
 # 4. Create the API Endpoint
+# server.py
 @api_server.post("/api/procure/rank")
 async def process_procurement_query(payload: QueryRequest):
-    """
-    Accepts a user request string, routes it through the LangGraph engine,
-    and returns full analytics and markdown responses.
-    """
     if not payload.user_query.strip():
         raise HTTPException(status_code=400, detail="Query cannot be empty string.")
         
     try:
-        # Packages the parameter into our known graph state dictionary
+        # Initialize the state payload with complete base keys
+        # This prevents any KeyError down the line inside Node 2 or Node 3
         inputs = {
             "user_query": payload.user_query,
             "weight_price": payload.weight_price,
@@ -54,10 +52,13 @@ async def process_procurement_query(payload: QueryRequest):
             "final_output": ""
         }
         
-        # Invoke the compiled graph synchronously 
+        print(f"\n📥 [API RECEIVE] Processing query: '{payload.user_query}'")
+        
+        # Invoke the graph engine directly
         graph_output = app.invoke(inputs)
         
-        # Return a clean production JSON response containing both structural arrays and markdown content
+        print(f"📤 [API SUCCESS] Graph executed successfully for: '{graph_output.get('target_product')}'")
+        
         return {
             "status": "success",
             "extracted_target": graph_output.get("target_product"),
@@ -67,8 +68,13 @@ async def process_procurement_query(payload: QueryRequest):
         }
         
     except Exception as e:
-        # Ensure errors are safely reported back to the client interface
-        raise HTTPException(status_code=500, detail=f"Graph Engine Error: {str(e)}")
+        # CRITICAL: This line forces the inner trace log to show up in your uvicorn console window!
+        import traceback
+        print("\n❌ !!! [GRAPH EXECUTION CRASH DETECTED] !!! ❌")
+        traceback.print_exc() 
+        print("===============================================\n")
+        
+        raise HTTPException(status_code=500, detail=f"Internal Graph Engine Error: {str(e)}")
 
 # Fallback basic status path
 @api_server.get("/health")
